@@ -1,6 +1,0 @@
-[package]
-name = "business_delegate"
-version = "0.1.0"
-authors = ["blackanger <blackanger.z@gmail.com>"]
-
-[dependencies]

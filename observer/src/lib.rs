@@ -14,7 +14,7 @@ pub trait Events {
     fn on_post_read(&self) {}
 }
 
-struct Logger;
+pub struct Logger;
 
 impl Events for Logger {
     fn on_connect(&self, host: &str, port: i32) {
@@ -42,7 +42,7 @@ impl Events for Logger {
     }
 }
 
-struct HttpClient {
+pub struct HttpClient {
     host: String,
     port: i32,
     hooks: Vec<Box<Events>>,

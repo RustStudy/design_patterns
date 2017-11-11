@@ -48,4 +48,19 @@
 
 ### 实例说明
 
+利用观察者模式实现事件驱动的日志，用于记录tcp连接事件。
 
+定义Events trait来抽象TCP连接中的事件接口：
+
+- on_connect
+- on_error
+- on_read
+- on_shutdown
+- on_pre_read
+- on_post_read
+
+定义结构体Logger，为其实现Events，当事件发生的时候，会打印相关信息。
+
+接下来使用HttpClient结构体来执行网络调用，并在事件发生时，通知其注册的hooks（观察者）。
+
+main函数中，使用httpbin.org网站来验证请求并打印数据。
