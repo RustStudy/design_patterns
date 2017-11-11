@@ -1,0 +1,37 @@
+[package]
+name = "design_patterns"
+version = "0.1.0"
+authors = ["blackanger <blackanger.z@gmail.com>"]
+
+
+[dependencies]
+factory = {path = "factory"}
+builder = {path = "builder"}
+singleton = {path = "singleton"}
+prototype = {path = "prototype"}
+
+adapter = {path = "adapter"}
+bridge = {path = "bridge"}
+filter = {path = "filter"}
+composite = {path = "composite"}
+decorator = {path = "decorator"}
+facade = {path = "facade"}
+flyweight = {path = "flyweight"}
+proxy = {path = "proxy"}
+
+chain_of_responsibility = {path = "chain_of_responsibility"}
+command = {path = "command"}
+interpreter = {path = "interpreter"}
+iterator = {path = "iterator"}
+mediator = {path = "mediator"}
+memento = {path = "memento"}
+observer = {path = "observer"}
+state = {path = "state"}
+null_object = {path = "null_object"}
+strategy = {path = "strategy"}
+template = {path = "template"}
+visitor = {path = "visitor"}
+
+rand = "0.3.14"
+
+[workspace]

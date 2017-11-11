@@ -1,0 +1,9 @@
+[package]
+name = "observer"
+version = "0.1.0"
+authors = ["blackanger <blackanger.z@gmail.com>"]
+
+[[bin]]
+name = "observer"
+
+[dependencies]
